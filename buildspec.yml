@@ -2,15 +2,15 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "Entered the pre-build phase"
+      - echo "Comenzando el pipeline en AWS"
   build:
     commands:
-      - echo "Entered build phase"
+      - echo "Construyendo JAR"
       - mvn clean install
   post_build:
     commands:
-      - echo "Entered the post-build phase"
-      - mv target/devops-api-test-0.0.1-SNAPSHOT.jar ./
+      - echo "Inicializando la aplicación"
+      - mvn spring-boot:run
 artifacts:
   files:
     - devops-api-test-0.0.1-SNAPSHOT.jar
