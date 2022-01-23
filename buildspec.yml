@@ -10,7 +10,7 @@ phases:
   post_build:
     commands:
       - echo "Inicializando la aplicación"
-      - target/devops-api-test-0.0.1-SNAPSHOT.jar ./
+      - mv target/devops-api-test-0.0.1-SNAPSHOT.jar ./
 artifacts:
   files:
     - devops-api-test-0.0.1-SNAPSHOT.jar
