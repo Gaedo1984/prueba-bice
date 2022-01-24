@@ -28,3 +28,13 @@ mvn spring-boot:run
 ```
 http://localhost:8080/v1/bice_vida/insurances
 ```
+
+### Flujo GIT
+```
+git branch
+```
+
+### Cambio de rama
+```
+git checkout <nombre-rama>
+```
