@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ *  Punto de entrada para el servicio.
+ */
 @RestController
 @RequestMapping("/v1/bice_vida")
 @Slf4j

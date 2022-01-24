@@ -10,6 +10,9 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Optional;
 
+/**
+ * Esta clase consume el servicio entregado
+ */
 @Service
 @Slf4j
 public class InsuranceApiService {

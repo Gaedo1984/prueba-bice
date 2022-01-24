@@ -5,6 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ *  Clase que mapea el resultado de la api entregada
+ */
 @Getter
 @Setter
 @NoArgsConstructor
