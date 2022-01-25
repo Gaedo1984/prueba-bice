@@ -7,10 +7,15 @@ phases:
     commands:
       - echo "Construyendo JAR"
       - mvn clean install
+  install:
+    runtime-versions:
+      java: corretto11
   post_build:
     commands:
       - echo "Inicializando la aplicación"
+      - mvn package
       - mv target/devops-api-test-0.0.1-SNAPSHOT.jar ./
 artifacts:
   files:
     - devops-api-test-0.0.1-SNAPSHOT.jar
+    - .ebextensions/**/*
