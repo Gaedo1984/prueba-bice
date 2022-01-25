@@ -14,7 +14,7 @@ phases:
     commands:
       - echo "Inicializando la aplicación"
       - mvn package
-      - mv target/devops-api-test-0.0.1-SNAPSHOT.jar ./
+      - mvn sring-boot:run
 artifacts:
   files:
     - devops-api-test-0.0.1-SNAPSHOT.jar
