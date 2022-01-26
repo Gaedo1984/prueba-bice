@@ -1,23 +1,11 @@
 version: 0.2
-env:
-  variables:
-    JAVA_HOME: "/usr/lib/jvm/java-11-openjdk-amd64"
+
 phases:
-  install:
-    commands:
-      - echo instalando maven...
-      - apt-get update -y
-      - apt-get install -y maven
   build:
     commands:
-      - echo Building bice vida
+      - mvn clean
       - mvn install
 artifacts:
   files:
-    - target/*.jar
-    - scripts/*.sh
-    - appspec.yml
-  discard-paths: yes
-cache:
-  paths:
-    - '/root/.m2/**/*'
+    - 'Dockerfile'
+    - 'target/devops-api-test-0.0.1-SNAPSHOT.jar'
