@@ -9,3 +9,17 @@ artifacts:
   files:
     - 'Dockerfile'
     - 'target/devops-api-test-0.0.1-SNAPSHOT.jar'
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+      - echo build bice vida
+      - mvn clean install
+artifacts:
+  files:
+    - target/devops-api-test-0.0.1-SNAPSHOT.jar
+  discard-paths: yes
