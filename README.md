@@ -2,13 +2,16 @@
 Prueba para DevOps Bice Vida
 
 ## CI/CD
-###Stage 1 Build: Generar JAR para servicio Spring Boot.
+
+### Stage 1: Instalar instancia de java.
+```
+install:
+    runtime-versions:
+      java: corretto11
+```
+###Stage 2 Build: Generar JAR para servicio Spring Boot.
 ```
 mvn clean install
-```
-### Stage 2: Copiar la aplicación en el EC2.
-```
-mv target/devops-api-test-0.0.1-SNAPSHOT.jar ./
 ```
 
 ## Levantar la aplicación en local.
@@ -35,7 +38,7 @@ http://localhost:8080/v1/bice_vida/insurances
 
 ### Flujo GIT
 ```
-git branch
+Cada vez que se haga un push a la rama main, el pipline en aws se activa.
 ```
 
 ### Cambio de rama
