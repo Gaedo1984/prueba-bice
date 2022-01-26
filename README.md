@@ -24,10 +24,14 @@ git clone git@github.com:Gaedo1984/prueba-bice.git
 mvn spring-boot:run
 ```
 
-### Visitar aplicacion.
+### Visitar aplicacion localmente.
 ```
 http://localhost:8080/v1/bice_vida/insurances
 ```
+
+### Visitar aplicacion en AWS.
+
+[Ir a aplicación en AWS](http://bicevidaentorno-env.eba-avkfwjpz.us-east-1.elasticbeanstalk.com/v1/bice_vida/insurances)
 
 ### Flujo GIT
 ```
