@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-alpine
+FROM gcr.io/distroless/java:11
 VOLUME /tmp
 ADD target/devops-api-test-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 5000
